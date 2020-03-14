@@ -6,6 +6,10 @@ Currently supporting UWP only, from SDK version 1809 and higher.
 > NOTE: Any lower SDK and you will get the following compilation error:
 >       Failed to create a 'System.Type' from the text '*your class here*'.
 
+## NuGet
+
+Install-Package XamlTemplateSelector -Version 1.0.0
+
 ## Overview
 
 This small library aims to help in eliminating the need of creating boring template selectors that just check for object type and return a specific template. A common example would be the following.
