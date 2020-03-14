@@ -48,7 +48,7 @@ A common template selector would be:
 This is fine but sometimes you just want to write it directly in XAML
 
 ### Our Version
-```
+```xml
     <xts:XamlTemplateSelector x:Key="DeviceSelector">
         <DataTemplate xts:XamlTypeHelper.TargetType="models:DesktopDevice">
             <StackPanel Orientation="Horizontal" Padding="5,10">
