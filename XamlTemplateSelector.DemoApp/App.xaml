@@ -2,6 +2,25 @@
     x:Class="XamlTemplateSelector.DemoApp.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:XamlTemplateSelector.DemoApp">
+    xmlns:models="using:XamlTemplateSelector.DemoApp.Models"
+    xmlns:xts="using:GhostCore.UWP.TemplateSelectors">
+    <Application.Resources>
+        <xts:XamlTemplateSelector x:Key="DeviceSelector">
+            <DataTemplate xts:XamlTypeHelper.TargetType="models:DesktopDevice">
+                <StackPanel Orientation="Horizontal" Padding="5,10">
+                    <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xEC77;"/>
+                    <TextBlock Text="{Binding Guid}" Margin="20,0,0,0"/>
+                    <TextBlock Text="{Binding ComputerName}" Margin="10,0,0,0"/>
+                </StackPanel>
+            </DataTemplate>
 
+            <DataTemplate xts:XamlTypeHelper.TargetType="models:MobileDevice">
+                <StackPanel Orientation="Horizontal" Padding="5,10" >
+                    <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xE8CC;"/>
+                    <TextBlock Text="Phone" Margin="50,0,0,0"/>
+                    <TextBlock Text="{Binding Phone}" Margin="10,0,0,0" Foreground="Gray"/>
+                </StackPanel>
+            </DataTemplate>
+        </xts:XamlTemplateSelector>
+    </Application.Resources>
 </Application>

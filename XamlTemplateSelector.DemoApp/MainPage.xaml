@@ -5,34 +5,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="using:XamlTemplateSelector.DemoApp.Models"
-    xmlns:xamltemplateselector="using:XamlTemplateSelector"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Page.Resources>
-
-        <DataTemplate x:Key="DesktopDeviceTemplate">
-            <StackPanel Orientation="Horizontal" Padding="5,10">
-                <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xEC77;"/>
-                <TextBlock Text="{Binding Guid}" Margin="20,0,0,0"/>
-                <TextBlock Text="{Binding ComputerName}" Margin="10,0,0,0"/>
-            </StackPanel>
-        </DataTemplate>
-
-        <DataTemplate x:Key="MobileDeviceTemplate">
-            <StackPanel Orientation="Horizontal" Padding="5,10" >
-                <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xE8CC;"/>
-                <TextBlock Text="Phone" Margin="50,0,0,0"/>
-                <TextBlock Text="{Binding Phone}" Margin="10,0,0,0" Foreground="Gray"/>
-            </StackPanel>
-        </DataTemplate>
-
-        <xamltemplateselector:XamlTemplateSelector x:Key="DeviceSelector">
-            <xamltemplateselector:DataTemplateEntry For="models:DesktopDevice" Template="{StaticResource DesktopDeviceTemplate}"/>
-            <xamltemplateselector:DataTemplateEntry For="models:MobileDevice" Template="{StaticResource MobileDeviceTemplate}"/>
-        </xamltemplateselector:XamlTemplateSelector>
-    </Page.Resources>
     <Grid>
         <ListView Name="lvDemo" ItemTemplateSelector="{StaticResource DeviceSelector}" />
-
     </Grid>
 </Page>
