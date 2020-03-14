@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>XamlTemplateSelector</id>
+    <name>XamlTemplateSelector</name>
+    <version>1.0.0</version>
+    <authors>Ionut Popovici</authors>
+    <owners>Ionut Popovici</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/djspider117/XamlTemplateSelector</projectUrl>
+    <icon>nugeticon.png</icon>
+    <description>Helps create data template selectors that select templates based on types directly in XAML.</description>
+    <summary>Helps create data template selectors that select templates based on types directly in XAML.</summary>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>uwp xaml template selector productivity</tags>
+    <dependencies>
+      <group targetFramework="UAP10.0" />
+    </dependencies>
+  </metadata>
+
+  <files>
+
+    <file src="nugeticon.png" target="" />
+
+    <!--ARM-->
+    <file src="XamlTemplateSelector\bin\ARM\Release\XamlTemplateSelector.dll" target="runtimes\win10-arm"/>
+    <file src="XamlTemplateSelector\bin\ARM\Release\XamlTemplateSelector.pri" target="runtimes\win10-arm"/>
+    <file src="XamlTemplateSelector\bin\ARM\Release\XamlTemplateSelector.xml" target="runtimes\win10-arm"/>
+
+    <!--ARM64-->
+    <file src="XamlTemplateSelector\bin\ARM64\Release\XamlTemplateSelector.dll" target="runtimes\win10-arm64"/>
+    <file src="XamlTemplateSelector\bin\ARM64\Release\XamlTemplateSelector.pri" target="runtimes\win10-arm64"/>
+    <file src="XamlTemplateSelector\bin\ARM64\Release\XamlTemplateSelector.xml" target="runtimes\win10-arm64"/>
+
+    <!--x64-->
+    <file src="XamlTemplateSelector\bin\x64\Release\XamlTemplateSelector.dll" target="runtimes\win10-x64"/>
+    <file src="XamlTemplateSelector\bin\x64\Release\XamlTemplateSelector.pri" target="runtimes\win10-x64"/>
+    <file src="XamlTemplateSelector\bin\x64\Release\XamlTemplateSelector.xml" target="runtimes\win10-x64"/>
+
+    <!--x86-->
+    <file src="XamlTemplateSelector\bin\x86\Release\XamlTemplateSelector.dll" target="runtimes\win10-x86"/>
+    <file src="XamlTemplateSelector\bin\x86\Release\XamlTemplateSelector.pri" target="runtimes\win10-x86"/>
+    <file src="XamlTemplateSelector\bin\x86\Release\XamlTemplateSelector.xml" target="runtimes\win10-x86"/>
+
+    <!--AnyCPU-->
+    <file src="XamlTemplateSelector\bin\Release\XamlTemplateSelector.dll" target="lib\uap10.0"/>
+    <file src="XamlTemplateSelector\bin\Release\XamlTemplateSelector.pri" target="lib\uap10.0"/>
+    <file src="XamlTemplateSelector\bin\Release\XamlTemplateSelector.xml" target="lib\uap10.0"/>
+
+  </files>
+</package>
