@@ -7,8 +7,9 @@ Currently supporting UWP only, from SDK version 1809 and higher.
 >       Failed to create a 'System.Type' from the text '*your class here*'.
 
 ## NuGet
-
+```powershell
 Install-Package XamlTemplateSelector -Version 1.0.0
+```
 
 ## Overview
 
