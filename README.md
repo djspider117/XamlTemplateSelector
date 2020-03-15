@@ -8,7 +8,7 @@ Currently supporting UWP only, from SDK version 1809 and higher.
 
 ## NuGet
 
-You can either use the following command in your Package Management Console, or in your NuGet UI search for XamlTemplateSelector
+You can either use the following command in your Package Management Console, or in your NuGet UI search for `XamlTemplateSelector`.
 
 ```powershell
 Install-Package XamlTemplateSelector -Version 1.0.0
